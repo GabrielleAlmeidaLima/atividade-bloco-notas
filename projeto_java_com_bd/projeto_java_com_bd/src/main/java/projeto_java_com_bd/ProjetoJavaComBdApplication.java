@@ -1,0 +1,13 @@
+package projeto_java_com_bd;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProjetoJavaComBdApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProjetoJavaComBdApplication.class, args);
+	}
+
+}

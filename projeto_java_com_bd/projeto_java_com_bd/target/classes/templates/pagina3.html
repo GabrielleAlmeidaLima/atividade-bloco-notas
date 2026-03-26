@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" th:href="@{css/pagina1.css}">
+</head>
+<body>
+    <a th:href="@{/}">VOLTAR</a>
+    <div class="container2">
+        <h1>SUAS NOTAS</h1>
+        <ul>
+            <li th:each="nota : ${notas}">
+                <span th:text="${nota.conteudo}"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
