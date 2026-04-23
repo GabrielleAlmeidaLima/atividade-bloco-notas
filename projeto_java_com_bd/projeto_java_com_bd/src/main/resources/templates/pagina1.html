@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" th:href="@{css/pagina1.css}">
+</head>
+<body>
+    <a th:href="@{/}">VOLTAR</a>
+    <div class="container2">
+        <h1>ADICIONE ITEM DE LISTA</h1>
+
+        <form action="#" th:action="@{/pagina1}" method="post" class="formulario" th:object="${anotacao}">
+            <input type="text"  placeholder="Escreva sua tarefa aqui" th:field="*{conteudo}" required>
+            <button type="submit">adicionar</button>
+        </form>
+
+        <ul>
+            <li th:each="nota : ${notas}">
+                <span th:text="${nota.conteudo}"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
