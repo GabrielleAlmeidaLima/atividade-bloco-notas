@@ -1,4 +1,4 @@
-FROM open-jdk:17-jdk-alpine
+FROM openjdk:17-jdk-alpine
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
