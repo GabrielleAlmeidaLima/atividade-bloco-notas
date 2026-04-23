@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Koulen&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Koulen&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    color:black;
+    font-family: poppins;
+    padding: 0px;
+    margin:0px;
+    line-height: 1;
+}
+
+.container2{
+    margin-top: 100px;
+    margin-left: 100px;
+    flex-direction: column;
+    display: flex;
+}
+
+h1{
+    font-size: 70px;
+    font-family: Koulen;
+}
+
+p{
+    font-family: poppins;
+    margin-top: 50px;
+    width: 580px;
+    height: 40px;
+    text-align: center;
+    line-height:40px;
+    box-shadow: 15px 15px 14.7px rgba(0,0,0,0.25);
+    display: inline-block;
+    background-color: white;
+    border-radius: 2px; 
+}
+
+a{
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: block;
+}
+
+a:hover{
+    color: brown;
+}
+
+input{
+    width: 500px;
+    border-right:none;
+}
+
+button{
+    width: 80px;
+    border-left:none;
+    background-color: black;
+    color: white;
+}
+
+::placeholder{
+    font-family: poppins;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+input, button{
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+.formulario{display: flex;}
+
+span{
+    font-family: poppins;
+    margin-top: 30px;
+    width: 580px;
+    height: 40px;
+    text-align: center;
+    line-height:40px;
+    box-shadow: 10px 10px 14.7px rgba(0,0,0,0.25);
+    display: inline-block;
+    background-color: white;
+    border-radius: 2px; 
+}
+
+li:first-child span {
+    margin-top: 0;
+}
+
+ul, li{
+    list-style: none;
+}

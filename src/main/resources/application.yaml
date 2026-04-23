@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://dpg-d7gmg5a8qa3s73ehme2g-a.oregon-postgres.render.com/aulabd_w43e
+    username: admin
+    password: sUiNXTN444usPLdBPEjM6LbBPotqAE7E
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema-postgresql.sql
